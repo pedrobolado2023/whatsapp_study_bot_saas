@@ -1,15 +1,2 @@
-# nixpacks.toml
-providers = ["node"]
-
-[phases.setup]
-nixPkgs = ["nodejs_18"]
-
-[phases.build]
-cmds = ["npm ci", "npm run build"]
-
 [phases.start]
-cmd = "npx serve -s build -l $PORT"
-
-[variables]
-NODE_ENV = "production"
-NIXPACKS_METADATA = "react"
+cmd = "npx serve -s build -p $PORT --cors"
