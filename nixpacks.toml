@@ -2,7 +2,7 @@
 providers = ["node"]
 
 [phases.setup]
-nixPkgs = ["nodejs", "npm"]
+nixPkgs = ["nodejs_18"]
 
 [phases.build]
 cmds = ["npm ci", "npm run build"]
