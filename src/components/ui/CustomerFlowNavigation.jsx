@@ -15,14 +15,14 @@ const CustomerFlowNavigation = ({ showProgress = false }) => {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <Icon name="MessageSquare" size={20} color="white" />
             </div>
-            <span className="text-xl font-semibold text-foreground">
-              WhatsApp Study Bot
+            <span className="text-xl font-semibold text-foreground">Q-aura
+
             </span>
           </Link>
 
           {/* Progress Indicator for Payment Flow */}
-          {showProgress && isPaymentPage && (
-            <div className="hidden sm:flex items-center space-x-4">
+          {showProgress && isPaymentPage &&
+          <div className="hidden sm:flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 <div className="w-6 h-6 bg-success rounded-full flex items-center justify-center">
                   <Icon name="Check" size={14} color="white" />
@@ -37,7 +37,7 @@ const CustomerFlowNavigation = ({ showProgress = false }) => {
                 <span className="text-sm text-foreground font-medium">Pagamento</span>
               </div>
             </div>
-          )}
+          }
 
           {/* Trust Signals */}
           <div className="flex items-center space-x-4">
@@ -47,13 +47,13 @@ const CustomerFlowNavigation = ({ showProgress = false }) => {
             </div>
             <div className="hidden md:flex items-center space-x-2 text-sm text-muted-foreground">
               <Icon name="Users" size={16} />
-              <span>+10.000 Estudantes</span>
+              <span>+10 Estudantes Online</span>
             </div>
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default CustomerFlowNavigation;

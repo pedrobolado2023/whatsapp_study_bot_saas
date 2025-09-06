@@ -33,21 +33,21 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 onClick={handleGetStarted}
                 iconName="MessageSquare"
                 iconPosition="left"
-                className="text-lg px-8 py-4"
-              >
+                className="text-lg px-8 py-4">
+
                 Começar Agora - R$ 29,90/mês
               </Button>
               
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
-                className="text-lg px-8 py-4"
-              >
+                className="text-lg px-8 py-4">
+
                 <Icon name="Play" size={20} className="mr-2" />
                 Ver Demonstração
               </Button>
@@ -146,8 +146,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;

@@ -1,19 +1,40 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8" />
-  <title>whatsapp-study-bot-saas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp Study Bot SaaS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="icon" href="/favicon.ico" />
+  <meta name="description" content="Plataforma SaaS para criação de bots de estudos no WhatsApp" />
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/src/index.jsx" as="script" type="module" />
+  
+  <!-- Icons and manifest -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/favicon.ico" />
   <link rel="manifest" href="/manifest.json" />
+  
+  <!-- Security headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
 <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fwhatsapps9638back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <noscript>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+      <div>
+        <h1>JavaScript Necessário</h1>
+        <p>Você precisa habilitar o JavaScript para executar esta aplicação.</p>
+        <p>You need to enable JavaScript to run this app.</p>
+      </div>
+    </div>
+  </noscript>
   <div class="dhiwise-code" id="root"></div>
   <script type="module" src="/src/index.jsx"></script>
 </body>
