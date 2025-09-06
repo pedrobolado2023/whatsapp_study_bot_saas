@@ -41,12 +41,22 @@
 [[headers]]
   for = "*.jsx"
   [headers.values]
-    Content-Type = "application/javascript; charset=utf-8"
+    Content-Type = "text/javascript; charset=utf-8"
+
+[[headers]]
+  for = "/src/*.jsx"
+  [headers.values]
+    Content-Type = "text/javascript; charset=utf-8"
 
 [[headers]]
   for = "/manifest.json"
   [headers.values]
     Content-Type = "application/manifest+json; charset=utf-8"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Content-Type = "image/x-icon"
 
 [build.environment]
   NODE_VERSION = "18"
